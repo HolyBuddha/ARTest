@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ARView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="ARTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kIO-ft-mNa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pjt-Xe-o7o">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EAd-29-cVs">
+                                <rect key="frame" x="20" y="692" width="374" height="134"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fPp-68-1eb">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="57"/>
+                                        <subviews>
+                                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CbZ-T5-C4j" userLabel="No">
+                                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="57"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="arrow.down.square.fill" catalog="system"/>
+                                            </button>
+                                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPN-kC-ZeP" userLabel="Forward">
+                                                <rect key="frame" x="131.5" y="0.0" width="111" height="57"/>
+                                                <state key="normal">
+                                                    <imageReference key="image" image="arrow.up.square.fill" catalog="system" symbolScale="default"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="forwardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="crr-eM-nZS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOd-dR-sRU" userLabel="No">
+                                                <rect key="frame" x="262.5" y="0.0" width="111.5" height="57"/>
+                                                <state key="normal">
+                                                    <imageReference key="image" image="arrow.left.square.fill" catalog="system" symbolScale="default" variableValue="0.0"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="leftButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5bD-00-ZeR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Twk-YP-5zP">
+                                        <rect key="frame" x="0.0" y="77" width="374" height="57"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tmd-O3-v4P" userLabel="Left">
+                                                <rect key="frame" x="0.0" y="0.0" width="121.5" height="57"/>
+                                                <state key="normal">
+                                                    <imageReference key="image" image="arrow.left.square.fill" catalog="system" symbolScale="default" variableValue="0.0"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="leftButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bl7-Te-Z9a"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgP-4B-V8B" userLabel="Down">
+                                                <rect key="frame" x="126.5" y="0.0" width="121" height="57"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="arrow.down.square.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="downButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O34-q2-jcz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJU-64-uNR" userLabel="Right">
+                                                <rect key="frame" x="252.5" y="0.0" width="121.5" height="57"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <imageReference key="image" image="arrow.right.square.fill" catalog="system" symbolScale="default"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="rightButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pnp-2h-hzD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="zHD-JC-4yZ"/>
+                                </constraints>
+                            </stackView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double speed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NLS-OL-QHz">
+                                <rect key="frame" x="50" y="83" width="314" height="43"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="35"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yDj-8t-a9P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NLS-OL-QHz" firstAttribute="leading" secondItem="yDj-8t-a9P" secondAttribute="leading" constant="50" id="151-Af-vbe"/>
+                            <constraint firstItem="Pjt-Xe-o7o" firstAttribute="leading" secondItem="yDj-8t-a9P" secondAttribute="leading" id="3bQ-Fv-g01"/>
+                            <constraint firstItem="Pjt-Xe-o7o" firstAttribute="trailing" secondItem="yDj-8t-a9P" secondAttribute="trailing" id="DbM-p2-QJR"/>
+                            <constraint firstItem="Pjt-Xe-o7o" firstAttribute="top" secondItem="kIO-ft-mNa" secondAttribute="top" id="L5p-Nl-mPK"/>
+                            <constraint firstAttribute="bottom" secondItem="Pjt-Xe-o7o" secondAttribute="bottom" id="Yn4-9g-uJM"/>
+                            <constraint firstItem="NLS-OL-QHz" firstAttribute="top" secondItem="yDj-8t-a9P" secondAttribute="top" constant="35" id="cZ4-Py-apA"/>
+                            <constraint firstItem="yDj-8t-a9P" firstAttribute="trailing" secondItem="NLS-OL-QHz" secondAttribute="trailing" constant="50" id="dZQ-jl-p5i"/>
+                            <constraint firstItem="yDj-8t-a9P" firstAttribute="trailing" secondItem="EAd-29-cVs" secondAttribute="trailing" constant="20" id="dik-EM-nDi"/>
+                            <constraint firstItem="EAd-29-cVs" firstAttribute="leading" secondItem="yDj-8t-a9P" secondAttribute="leading" constant="20" id="r9x-db-gmG"/>
+                            <constraint firstAttribute="bottom" secondItem="EAd-29-cVs" secondAttribute="bottom" constant="70" id="u7W-dm-5dk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="Pjt-Xe-o7o" id="q8g-ZP-1lG"/>
+                        <outlet property="buttonsStack" destination="EAd-29-cVs" id="BdQ-wV-E3s"/>
+                        <outlet property="speedLabel" destination="NLS-OL-QHz" id="gBy-n0-TSl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.down.square.fill" catalog="system" width="128" height="114"/>
+        <image name="arrow.left.square.fill" catalog="system" width="128" height="114"/>
+        <image name="arrow.right.square.fill" catalog="system" width="128" height="114"/>
+        <image name="arrow.up.square.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
