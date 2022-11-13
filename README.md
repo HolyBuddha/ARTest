@@ -3,7 +3,7 @@
 
 Использованные технологии:<br>
 UIKit<br>
-ARkit<br>
+ARKit<br>
 RealityKit<br>
 
 ## Видео
