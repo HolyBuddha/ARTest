@@ -1,20 +1,12 @@
 # ARTest
-Test app for Mixare
+Тестовое задание для Mixare.
+Использованные технологии:
+UIKit
+ARkit
+RealityKit
 
 ## Видео
 
-![70n0fj](https://user-images.githubusercontent.com/89085993/201546783-12adc67c-cdec-4b78-bc15-d7d720b685fb.gif)
-
-## Технологии
-
-```ruby
-UIKit
-```
-```ruby
-ARkit
-```
-```ruby
-RealityKit
-```
+![70n0fj](https://user-images.githubusercontent.com/89085993/201546861-eb51635a-bf88-4cf2-8531-981a2fc9d6d9.gif)
 
 
