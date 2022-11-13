@@ -1,9 +1,9 @@
 # ARTest
 Тестовое задание для Mixare.
-Использованные технологии:
-UIKit
-ARkit
-RealityKit
+Использованные технологии:<br>
+UIKit<br>
+ARkit<br>
+RealityKit<br>
 
 ## Видео
 
